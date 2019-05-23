@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <h1>Submitted Info</h1>
+    <br>
+    {% for one_user in all_users %}
+        <p>Name: {{one_user['name']}}</p>
+        <p>Dojo Location: {{one_user['dojo_location']}}</p>
+        <p>Favorite Language: {{one_user['favorite_language']}}</p>
+        <p>Comment:{{one_user['comments']}}</p>
+    {% endfor %}
+</body>
+</html>
